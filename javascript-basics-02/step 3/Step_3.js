@@ -1,8 +1,6 @@
 let i = document.querySelector('#name');
-let d = document.querySelector('div');
-
+let d = document.createElement("div");
 i.addEventListener("change" ,changes);
-
 function changes(){
-d.innerHTML=i.value;
-}
+d.innerText = i.value;
+document.body.appendChild(d);}
